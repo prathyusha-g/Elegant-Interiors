@@ -1,0 +1,108 @@
+<html>
+<head>
+
+<title>Elegant Interiors</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+<style>
+   
+.mySlides {display:none;
+  border-radius: 25px;
+  }
+
+</style>
+
+
+</head>
+
+
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+   
+<!-- <a class="navbar-brand" href="">Logo</a> -->
+    <img src="logo3.PNG" style="width: 200px;height: 50px">              
+<ul class="navbar-nav">
+    <li class="nav-item">
+    <a class="nav-link" href="index.html">Home</a>
+    </li>
+
+    <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Projects</a>
+      <div class="dropdown-menu">
+          <a class="dropdown-item" href="corporate.html">Corporates</a>
+          <a class="dropdown-item" href="residential.html">Residential</a>
+          <a class="dropdown-item" href="educational.html">Educational Institutes</a>
+      </div>
+    </li>
+
+    <li class="nav-item">
+    <a class="nav-link" href="about.html">About</a>
+    </li>
+
+    <li class="nav-item">
+    <a class="nav-link" href="vison.html">Vision</a>
+    </li>
+    
+    <li class="nav-item">
+    <a class="nav-link" href="contact.html">Contact</a>
+    </li>
+    
+    </ul>
+</nav>
+    
+<br>
+<br>
+
+
+        
+          <center>
+            <div class="w3-content w3-section" style="max-width:500px">
+              <img class="mySlides" src="https://marshallerb.com/wp-content/uploads/2016/11/dream-home-interior-design.jpg" style="width:150%;">
+              <img class="mySlides" src="https://d4qwptktddc5f.cloudfront.net/sarah-kuchar-studio-source-international-showroom_get-it-got1.jpg" style="width:150%">
+              <img class="mySlides" src="_NVS0197.JPG" style="width:150%">
+            </div>
+          </center> 
+
+            <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+            </script>
+            
+        
+          <center><h1>About Us:</h1>
+
+          <h5>It all started back in 2007 when the Hyderabad was on top position<br>
+             in terms of IT development . That was when our team got together.</h5>
+          <br>
+
+          <h5>Since then we have added many a landmarks in the residential & <br>
+            commercial sectors.It has been a fascinating journey sice 2007 for us<br>
+            having built an array projects both diverse & prestigious.</h5>
+          <br>
+
+          <h5>As a contractor we undertake Civil works along with Interiors of <br>
+            corporate, educational institutes,appartments,independent houses as well 
+            as villas.</h5>
+          </center>
+     
+
+</body>
+</html>

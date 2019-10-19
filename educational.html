@@ -1,0 +1,284 @@
+<html>
+    <head>
+        <title>Elegant Interiors</title>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- <style>
+        body {
+      font-family: Arial;
+      margin: 0;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    img {
+      vertical-align: middle;
+    }
+    
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
+      position: relative;
+    }
+    
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+    
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+      cursor: pointer;
+    }
+    
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 40%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    /* Container for image text */
+    .caption-container {
+      text-align: center;
+      background-color: #222;
+      padding: 2px 16px;
+      color: white;
+    }
+    
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Six columns side by side */
+    .column {
+      float: left;
+      width: 16.66%;
+    }
+    
+    /* Add a transparency effect for thumnbail images */
+    .demo {
+      opacity: 0.6;
+    }
+    
+    .active,
+    .demo:hover {
+      opacity: 1;
+    }
+    .project-corporate{
+        background-image: url(https://cdn.suwalls.com/wallpapers/abstract/shades-of-blue-texture-48840-2880x1800.jpg);
+        width:100%;
+        height: 50%;
+    }
+    .corporate-images{
+        background-color: rgb(179, 179, 255);
+    }
+    </style> -->
+    
+    <!-- ____________________________________________________________________ -->
+
+    <style>
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+#expandedImg{
+  border-radius: 25px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+} 
+    .project-corporate{
+        background-image: url(https://cdn.suwalls.com/wallpapers/abstract/shades-of-blue-texture-48840-2880x1800.jpg);
+        width:100%;
+        height: 100%;
+    }
+    .corporate-images{
+        background-color: rgb(179, 179, 255);
+    } */
+    </style>
+    </head>
+    <body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!-- <a class="navbar-brand" href="#">Logo</a> -->
+    <img src="logo3.PNG" style="width: 200px;height: 50px">              
+
+        <ul class="navbar-nav">
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Projects</a>
+    <div class="dropdown-menu">
+        <a class="dropdown-item" href="corporate.html">Corporates</a>
+        <a class="dropdown-item" href="residential.html">Residential</a>
+        <a class="dropdown-item" href="educational.html">Educational Institutes</a>
+    </div>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="about.html">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="vison.html">Vision</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="contact.html">Contact</a>
+</li>
+
+                   
+</ul>
+</nav>
+
+<div class="project-corporate">
+    <div class="row">
+        <div class="column">
+          <img src="7.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="sierra-01.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="sierra-03.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="sierra-04.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+        </div>
+      </div>
+      
+      <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%;height: 50%;">
+        <div id="imgtext"></div>
+      </div>
+      
+      <script>
+      function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+      }
+      </script>
+
+
+
+  <!-- ____________________________________________________________________ -->
+
+
+        <h2 style="color: burlywood"> Educational Institutes:-</h2>
+        <br>
+        <br>
+        <i style="color: beige" class="fa fa-hand-o-right" aria-hidden="true">
+            <h3 style="color: blanchedalmond">
+            Bits Pilani Hyderabad campus - Library block <br>
+        Ground & 1st floor civil & interior finishes.</h3>
+        </i>
+        <br>
+        <i style="color: beige" class="fa fa-hand-o-right" aria-hidden="true">
+            <h3 style="color: blanchedalmond">
+                Bits Pilani Hyderabad campus - Library block <br>
+                lower ground floor civil & interior finishes.
+            </h3></i>
+        <br>
+        
+    </div>
+    
+   
+    
+
+
+</body>
+</html>
